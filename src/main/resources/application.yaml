@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/enge1414
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+server:
+  port: 8080
+  ip: localhost
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+
+
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #show sql
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#    map-underscore-to-camel-case: false
+
+#file:
+#path: D:\AITraining\Backend\file\
