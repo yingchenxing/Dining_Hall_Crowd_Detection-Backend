@@ -43,14 +43,14 @@ public class HallController {
 
     //返回所有
     @GetMapping
-    public Result findAll() {
-        return Result.success(hallService.list());
+    public List<Hall> findAll() {
+        return hallService.list();
     }
 
     //通过id查询
     @GetMapping("/{id}")
-    public Result findOne(@PathVariable Integer id) {
-        return Result.success(hallService.getById(id));
+    public Hall findOne(@PathVariable Integer id) {
+        return hallService.getById(id);
     }
 }
 
