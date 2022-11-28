@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2022-11-12
  */
 @RestController
-@RequestMapping("/window")
-public class WindowController {
+@RequestMapping("/messageInfo")
+public class MessageInfoController {
 
 }
 

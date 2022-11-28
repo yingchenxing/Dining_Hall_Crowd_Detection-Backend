@@ -1,6 +1,6 @@
 package com.example.dininghallcrowddetection.mapper;
 
-import com.example.dininghallcrowddetection.entity.Window;
+import com.example.dininghallcrowddetection.entity.MessageInfo;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
@@ -11,6 +11,6 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author xic
  * @since 2022-11-12
  */
-public interface WindowMapper extends BaseMapper<Window> {
+public interface MessageInfoMapper extends BaseMapper<MessageInfo> {
 
 }

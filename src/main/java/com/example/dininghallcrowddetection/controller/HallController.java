@@ -23,31 +23,31 @@ public class HallController {
     @Resource
     private IHallService hallService;
 
-    //根据id新增或修改
+    //add by id
     @PostMapping
     public Result save(@RequestBody Hall hall) {
         return Result.success(hallService.saveOrUpdate(hall));
     }
 
-    //根据id删除
+    //delete by id
     @DeleteMapping("/{id}")
     public Result delete(@PathVariable Integer id) {
         return Result.success(hallService.removeById(id));
     }
 
-    //根据id批量删除
+    //delete batch by id
     @PostMapping("/del/batch")
     public Result deleteBatch(@RequestBody List<Integer> ids) {
         return Result.success(hallService.removeBatchByIds(ids));
     }
 
-    //返回所有
+    //return all
     @GetMapping
     public List<Hall> findAll() {
         return hallService.list();
     }
 
-    //通过id查询
+    //find by id
     @GetMapping("/{id}")
     public Hall findOne(@PathVariable Integer id) {
         return hallService.getById(id);

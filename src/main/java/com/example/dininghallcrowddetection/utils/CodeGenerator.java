@@ -15,7 +15,7 @@ public class CodeGenerator {
                 .globalConfig(builder -> {
                     builder.author("xic") // 设置作者
 //                            .enableSwagger() // 开启 swagger 模式
-                            .fileOverride() // 覆盖已生成文件
+//                            .fileOverride() // 覆盖已生成文件
                             .outputDir("D:\\AITraining\\Backend\\src\\main\\java\\"); // 指定输出目录
                 })
                 .packageConfig(builder -> {
@@ -26,8 +26,9 @@ public class CodeGenerator {
                 .strategyConfig(builder -> {
                     builder.entityBuilder().enableLombok();
                     builder.controllerBuilder().enableRestStyle();
-                    builder.addInclude("hall") // 设置需要生成的表名
+                    builder.addInclude("message_info") // 设置需要生成的表名
                             .addInclude("window") // 设置需要生成的表名
+                            .addInclude("hall") // 设置需要生成的表名
 //                            .addInclude("log") // 设置需要生成的表名
 //                            .addInclude("station") // 设置需要生成的表名
 //                            .addInclude("ticket") // 设置需要生成的表名

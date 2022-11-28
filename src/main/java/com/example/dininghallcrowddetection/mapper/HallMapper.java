@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * </p>
  *
  * @author xic
- * @since 2022-11-09
+ * @since 2022-11-12
  */
 public interface HallMapper extends BaseMapper<Hall> {
 

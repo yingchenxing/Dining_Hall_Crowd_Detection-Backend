@@ -10,4 +10,9 @@ class DiningHallCrowdDetectionApplicationTests {
     void contextLoads() {
     }
 
+    @Test
+    public void testMessage(){
+
+    }
+
 }
